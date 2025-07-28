@@ -1,0 +1,42 @@
+.highlight {
+    background-color: yellow;
+}
+
+.error {
+    background-color: lightcoral;
+    border: red;
+}
+
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: darkblue;
+    text-align: center;
+    font-size: 3em;
+    margin-top: 40px;
+    font-family: "Winky Rough", cursive, sans-serif;
+}
+
+p {
+    font-family: "Winky Rough", cursive, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin: 40px;
+}
+
+div {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#quote {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#message {
+    text-align: center;
+    margin: 20px 0;
+}

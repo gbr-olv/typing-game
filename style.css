@@ -1,10 +1,12 @@
 .highlight {
     background-color: yellow;
+    border-radius: 5px;
 }
 
 .error {
     background-color: lightcoral;
-    border: red;
+    border: 2px solid red;
+    border-radius: 5px;
 }
 
 body {
@@ -34,9 +36,22 @@ div {
 #quote {
     text-align: center;
     margin: 20px 0;
+    border-radius: 10px;
 }
 
 #message {
     text-align: center;
     margin: 20px 0;
+}
+
+#start {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#typed-value {
+    border-radius: 10px;
+    padding: 5px;
+    border: 2px solid #ccc;
+    font-size: 16px;
 }

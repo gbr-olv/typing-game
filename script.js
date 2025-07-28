@@ -20,6 +20,9 @@ const quoteElement = document.getElementById('quote');
 const messageElement = document.getElementById('message');
 const typedValueElement = document.getElementById('typed-value');
 
+// Start with input disabled
+typedValueElement.disabled = true;
+
 document.getElementById('start').addEventListener('click', () => {
   // get a quote
   const quoteIndex = Math.floor(Math.random() * quotes.length);
@@ -47,6 +50,8 @@ document.getElementById('start').addEventListener('click', () => {
   // Setup the textbox
   // Clear the textbox
   typedValueElement.value = '';
+  // Enable the input
+  typedValueElement.disabled = false;
   // set focus
   typedValueElement.focus();
   // set the event handler
@@ -67,6 +72,8 @@ typedValueElement.addEventListener('input', () => {
     const elapsedTime = new Date().getTime() - startTime;
     const message = `CONGRATULATIONS! You finished in ${elapsedTime / 1000} seconds.`;
     messageElement.innerText = message;
+    // Disable the input
+    typedValueElement.disabled = true;
   } else if (typedValue.endsWith(' ') && typedValue.trim() === currentWord) {
     // end of word
     // clear the typedValueElement for the new word
